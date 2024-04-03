@@ -7,3 +7,4 @@ def replace_last(numbers):
         return numbers
 number = [2,5,3,6,7,8,9,10,11,12]
 print(replace_last(number))
+
