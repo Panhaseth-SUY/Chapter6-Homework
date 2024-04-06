@@ -1,11 +1,14 @@
-def chunking_by(numbers, chunck):
+def chunking_by(number, chunck):
     list = []
     temp = []
-    for i in numbers:
-        temp.append(i)
-        if len(temp) == chunck:
+    i=0
+    while i < len(number):
+        print(number[i])
+        temp.append(number[i])
+        if len(temp)==chunck:
             list.append(temp)
-            temp = []
+            temp =[]
+        i+=1
     if len(temp) > 0:
         list.append(temp)
     return list
